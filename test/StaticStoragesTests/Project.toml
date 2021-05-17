@@ -1,0 +1,10 @@
+name = "StaticStoragesTests"
+uuid = "7a10d888-f896-4a40-96b5-15e81063b5de"
+authors = ["Takafumi Arakaki <aka.tkf@gmail.com>"]
+version = "0.1.0"
+
+[deps]
+Documenter = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
+LoadAllPackages = "b37bcd2d-1570-475d-a8c6-9b4fae6d0ba9"
+StaticStorages = "ee8d4ff6-3960-4079-a45c-572c714b7398"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
