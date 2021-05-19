@@ -71,7 +71,7 @@ function runtests_static(modules = collect_modules())
             applicable(f) || return nothing  # removed by Revise?
             return f
         end
-        filter!(!isnothing, tests)
+        filter!(x -> x !== nothing, tests)
         @testset "$f" for f in tests
             @debug "Testing $m.$f"
             f()
@@ -81,7 +81,7 @@ end
 
 function _runtests_dynamic()
     modules = collect_modules()
-    filter!(!=(TestDoctest), modules)
+    filter!(x -> x !== TestDoctest, modules)
     runtests_static(modules)
 end
 
